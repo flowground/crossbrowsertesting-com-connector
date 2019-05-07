@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "properties": {
+        "target_screenshot_test_id": {
+            "required": true,
+            "type": "integer"
+        },
+        "target_version_id": {
+            "required": true,
+            "type": "integer"
+        },
+        "base_result_id": {
+            "required": true,
+            "type": "integer"
+        },
+        "format": {
+            "required": false,
+            "type": "string",
+            "default": "json"
+        },
+        "callback": {
+            "required": false,
+            "type": "string"
+        },
+        "tolerance": {
+            "type": "number",
+            "format": "integer 0-100",
+            "default": 30
+        }
+    }
+}
